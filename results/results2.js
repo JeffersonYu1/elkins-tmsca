@@ -1,7 +1,5 @@
-// instantiate variables
-var corsHeader = "https://cors-anywhere.herokuapp.com/";
-var sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRe0wyok-9y8PnZpJ9LG5Tjc6N-UvGaQyy1FpPAbW0AQ_y7PNqlD7d_c3_GCaIgJQkCMfr9kTqKEfDM/pub?output=xlsx";
-var url = corsHeader + sheetURL;
+// *** REPLACE SHEETURL WITH NEW GOOGLE SHEETS URL FOR EVERY USE
+var url = "https://docs.google.com/spreadsheets/d/e/YOUR-SHEET-ID-HERE";
 var userTime = Math.round((new Date()).getTime() / 1000);
 
 var esPlaces = 10;
@@ -13,10 +11,11 @@ var msSweep = 2;
 var hsPlaces = 6;
 var hsSweep = 2;
 
+// *** SET USERNAME AND PASSWORD FOR ADMIN LOGIN
 var objPeople = [
     {
-        username: "elkinsadmin",
-        password: "crosbington"
+        username: "",
+        password: ""
     }
 ];
 

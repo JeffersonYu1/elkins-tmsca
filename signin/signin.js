@@ -1,4 +1,6 @@
-var url = "https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/e/2PACX-1vS53wvXTegGTTpO_KFOIcMiLc8yeaH_baF8n6w1sgNN7_jU2ICdyZum4quErESsIXtRXGEUKDaFhHAO/pub?output=xlsx"; // URL of Google Spreadsheet
+// *** REPLACE SHEETURL WITH NEW GOOGLE SHEETS URL FOR EVERY USE
+var url = "https://docs.google.com/spreadsheets/d/e/YOUR-SHEET-ID-HERE"; // URL of Google Spreadsheet
+
 // must be reset for every new user
 var studentID;
 var thisSheet;
