@@ -25,8 +25,12 @@ https://elkinstmsca1920.weebly.com
 ### Installation
 1. These code snippets can be used on any website or website hoster, such as Weebly or Wordpress.
 2. Once a website is set up, copy the code snippets into the corresponding pages (registration.html into the Registration Page, results2.html into the Results Page, etc.)
-3. Import the .js and .css files as assets into your website. You may need to 
-4. 
+3. Import the .js and .css files as assets into your website. You may need to edit the links to the assets at the top of each corresponding .html file.
+4. For the Results and Sign-In pages, you must change the Google Sheets URL at the top of the .js files. 
+    1. [Instructions can be found here](https://sites.google.com/a/ccpsnet.net/googletraining/faq/FAQ-Drive/how-do-i-publish-a-sheet-to-the-web-and-what-does-that-mean) regarding the "Publish To The Web" function of Google Sheets. Workbooks should be published with all sheets, and as an Excel (XLSX) format.
+    2. [Copy a template here for the Results page](https://docs.google.com/spreadsheets/d/1QWfdL1PTMwvLUxc9Rhd-SO924D1JkRuUMqtMaqG8Fdc/edit?usp=sharing). Sheets are divided by grade level. Names of contestants go in each row. Scores for each test (Number Sense, Calculator, General Math, and General Science) should go in the cell associated with the correct test type (column) and contestant (row). Input an "x" for contestants who registered for a certain test but failed to attend.
+    3. [Copy a template here for the Volunteer Sign-In page](https://docs.google.com/spreadsheets/d/1QuSMbv_N-P6LOjn3ms9NcP7FbeVOWpNxRPLzY7l-kHE/copy?usp=sharing). Names of volunteers, along with the associated data, go in each row.
+5. You may change the administrator login for the Results Page in the .js file if you would like. Note that this is only a bit of simple JavaScript to prevent contestants from looking at the results before the awards ceremony. Although it does the job, it is not by any means a comprehensive security measure - please do not include any personal or important login information. 
 
 ## Usage
 
@@ -35,4 +39,8 @@ https://elkinstmsca1920.weebly.com
 * Project link: https://github.com/JeffersonYu1/elkins-tmsca
 
 ## Acknowledgments
-
+* [jsPDF](https://github.com/parallax/jsPDF)
+* [jsPDF Autotable](https://github.com/simonbengtsson/jsPDF-AutoTable)
+* [SheetJS](https://github.com/SheetJS/sheetjs)
+* [Lodash](https://lodash.com/)
+* [Google Fonts](https://fonts.google.com/)
