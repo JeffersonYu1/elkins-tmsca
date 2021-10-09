@@ -4,10 +4,10 @@
 <head>
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.0/jspdf.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 	<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.5/jspdf.plugin.autotable.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.4/jspdf.plugin.autotable.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.1/xlsx.full.min.js"></script>
 
 	<script src="registration.js"></script>
@@ -24,18 +24,21 @@
 <input type="text" id="rLname" placeholder="Last Name" class="wsite-form-input wsite-input">
 <br><br>
 
-<p class="title" style="display: inline;"><b>Official School Name:</b></p><br>
-<input type="text" id="schoolRoot" class="wsite-form-input wsite-input">
+<p class="title" style="display: inline;"><b>Email:</b></p><br>
+<input type="text" id="rEmail" placeholder="Email" class="wsite-form-input wsite-input">
+<br><br>
 
-<select id="schoolCat" class="form-select" style="font-family:Montserrat">
-	<option value="Elementary School"><p>Elementary School</p></option>
-	<option value="Middle School"><p>Middle School</p></option>
-	<option value="High School"><p>High School</p></option>
-</select>
+<p class="title" style="display: inline;"><b>Phone Number:</b></p><br>
+<input type="text" id="rPhone" placeholder="0000000000" class="wsite-form-input wsite-input">
+<br><br><br>
+
+<p class="title" style="display: inline;"><b>Full Official School Name:</b></p><br>
+<input type="text" id="schoolName" class="wsite-form-input wsite-input">
 
 <br><br>
 
-<p class="title" style="display: inline;"><b>School "Initials"</b></p><br>
+<p class="title" style="display: inline;"><b>School Abbreviation</b></p><br>
+<small><em>For instance, Elkins High School would be abbreviated as EHS.</em></small><br>
 <input type="text" id="schoolIni" class="wsite-form-input wsite-input">
 
 

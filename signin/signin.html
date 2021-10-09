@@ -1,0 +1,99 @@
+<head>
+  <title>Elkins TMSCA 19-20 Volunteer Sign-In</title>
+  <link rel='shortcut icon' href='elkins.ico' type='image/x-icon'/ >
+</head>
+<body>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"></script>
+<script src='https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.4/jspdf.plugin.autotable.min.js"></script>
+<script src="http://stevenlevithan.com/assets/misc/date.format.js"></script>
+
+<script src="signin.js"></script>
+<script data-cfasync="false" src="form-submission-handler.js"></script>
+<link href="signin.css" rel="stylesheet">
+
+<div id="biggyContainer">
+  <div id="enterStudentIDPart" style="" class="centralBoi">
+  <h1 class="notLastLine">Elkins TMSCA 19-20</h1>
+  <h1>Volunteer Sign-In</h1>
+    <input id="studentIDFirst" name="studentIDFirst" placeholder="6-Digit Student ID" type="text" onkeypress="javascript:doit_onkeypress(event);">
+    <br>
+    <div id="studentIDPart" class="bigButton">Enter</div>
+    <br>
+    <p>&copy; 2019 by Jefferson Yu.</p>
+  </div>
+
+  <div id="pleaseWaitPart" style="" class="centralBoi">
+    <h2>Please wait.</h2>
+  </div>
+
+  <div id="reviewInfoPart" style="" class="centralBoi">
+    <div id="studentIDDisplayBox" class="IDDisp">
+      <p id="sIDDBtext" style="width: 100%; margin: 0"></p>
+    </div>
+    <h4 id="pic"><u><i>Please</i></u> take a picture of this screen for your personal reference.</h4>
+    <h2 id="jobNTime"></h2>
+    <h3 id="infoL1"></h3>
+    <h3 id="infoL2"></h3>
+    <h3 id="infoL3"></h3>
+    <h3 id="infoL4"></h3>
+    <h3 id="infoL5"></h3>
+    <div style="">
+      <div id="reviewInfoPartButton" class="bigButton" style="display:inline-block; min-width: 15vw;">Continue</div>
+      <div id="exitButton1" class="bigButton exitButton" style="display:inline-block; min-width: 15vw;">Exit</div>
+    </div>
+  </div>
+
+  <div id="signInPart" class="centralBoi" style="">
+    <div id="studentIDDisplayBox2" class="IDDisp">
+      <p id="sIDDBtext2" style="width: 100%; margin: 0"></p>
+    </div>
+    <h2 id="jobNTime2"></h2>
+    <h3 id="currentTime"></h3>
+    <h2 id="signInTime"></h2>
+    <h2 id="signOutTime"></h2>
+    <form class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycby_PU0dxGqKNB0GOfOn0tgm8AiL4cGJdMvBhzpLKn3_FBK1v54/exec">
+
+      <div class="form-elements" style="display:none;">
+
+          <!--submit/button-->
+          
+          <!--text-field-->
+          <fieldset class="pure-group">
+            <label for="text">Student ID: </label>
+            <input id="studentID" name="studentID" placeholder="6-Digit Student ID" />
+          </fieldset>
+
+          <!--text-field-->
+          <fieldset class="pure-group">
+            <label for="text">Which item? </label>
+            <input id="itemNum" name="itemNum"/>
+          </fieldset>
+
+          <!--radio group-->
+          <fieldset class="pure-group">
+            <legend>Choose one:</legend>
+            <input id="radio-signin" type="radio" name="signinout" value="signin" /> <label for="radio-signin">Sign-In</label>
+            <input id="radio-signout" type="radio" name="signinout" value="signout" /> <label for="radio-signout">Sign-Out</label>
+          </fieldset>    
+
+          <button class="button-success pure-button button-xlarge" id="submitButton">
+            <i class="fa fa-paper-plane"></i>Submit
+          </button>
+      </div>
+    </form>
+
+    <div style="">
+      <div id="signInButton" class="bigButton" style="display:inline-block; min-width: 15vw;">Sign-In</div>
+      <div id="signOutButton" class="bigButton" style="display:inline-block; min-width: 15vw;">Sign-Out</div>
+      <div id="exitButton2" class="bigButton exitButton" style="display:inline-block; min-width: 15vw;">Exit</div>
+    </div>
+  </div>
+</div>
+</body>

@@ -1,0 +1,86 @@
+body{
+	font-family: "Raleway";
+}
+
+h1{
+	font-size: 7vw;
+	margin-bottom: 2vw;
+}
+
+h2{
+	font-size: 28px;
+}
+
+.notLastLine{
+	margin-bottom: -5vw;
+}
+
+#biggyContainer{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	height: 100%;
+  	width: 100%;
+}
+
+.centralBoi{
+  	max-width: 100%;
+  	width: 95vw;
+  	text-align: center;
+  	margin: auto;
+}
+
+#studentIDfirst{
+	font-family: inherit;
+	font-size: 7vw;
+	background-color: transparent;
+	border-radius: 0;
+	border-width: 0px;
+	border: none;
+	height: 20%;
+	padding: 10px;
+	text-align: center;
+}
+
+#studentIDfirst:hover{
+	border-style: none none solid none;
+	border-width: 1px;
+}
+
+#studentIDfirst:focus{
+	border-style: none none solid none;
+	border-width: 1px;
+}
+
+.bigButton{
+	border: 2px solid #2d2d2d;
+  	margin: 3%;
+
+  	background-color: white;
+	font-family: inherit;
+	font-size: 4vw;
+	padding: 1vw 3vw 1vw 3vw;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.bigButton:hover{
+	cursor: pointer;
+	background-color: #cecece;
+}
+
+.bigButton:focus{
+	background-color: #a7a7a7;
+}
+
+.IDDisp{
+	border: 2px solid #2d2d2d;
+  	margin: 3%;
+  	background-color: white;
+	font-family: inherit;
+	font-size: 3vw;
+	padding: 1vw;
+}
+
+.gform{
+	font-family: inherit;
+}
