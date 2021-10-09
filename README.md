@@ -1,5 +1,5 @@
 # Elkins High School TMSCA Competition
-Tools to enhance the execution of the contest. Written by Jefferson Yu.
+Tools to enhance the execution of the annual Math Contest hosted by [EHS](https://www.fortbendisd.com/ehs). Written by Jefferson Yu.
 
 ## About the Project
 ### Background
