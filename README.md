@@ -26,6 +26,9 @@ Sample Results PDF output. Includes results for every category and grade level, 
 #### Volunteer Sign-in
 The Volunteer Sign-In page prompts volunteers to input their 6-digit student ID assigned by the school. After querying the appropriate data, the page displays instructions for the volunteer, such as a room number, time, etc., and clocks them in.
 
+Sample Volunteer Sign-in Info:
+![sample volunteer info](https://user-images.githubusercontent.com/43518772/136645682-246d5f47-2a73-4c65-bc31-fc47f2fba69d.png)
+
 ### Live Demo
 https://elkinstmsca1920.weebly.com
 
