@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.0/jspdf.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.5/jspdf.plugin.autotable.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.1/xlsx.full.min.js"></script>
+
+	<script src="registration.js"></script>
+
+	<link href="registration.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+</head>
+
+<body>
+<p class="title" style="display: inline;"><b>Your Name:</b></p><br>
+<input type="text" id="rFname" placeholder="First Name" class="wsite-form-input wsite-input">
+<input type="text" id="rLname" placeholder="Last Name" class="wsite-form-input wsite-input">
+<br><br>
+
+<p class="title" style="display: inline;"><b>Official School Name:</b></p><br>
+<input type="text" id="schoolRoot" class="wsite-form-input wsite-input">
+
+<select id="schoolCat" class="form-select" style="font-family:Montserrat">
+	<option value="Elementary School"><p>Elementary School</p></option>
+	<option value="Middle School"><p>Middle School</p></option>
+	<option value="High School"><p>High School</p></option>
+</select>
+
+<br><br>
+
+<p class="title" style="display: inline;"><b>School "Initials"</b></p><br>
+<input type="text" id="schoolIni" class="wsite-form-input wsite-input">
+
+
+
+<br><br>
+<p class="title" style="display: inline;"><b>Registration Type:</b></p><br>
+<input type="radio" name="registrationType" value="School" id="regSchool" checked="checked" class="form-radio-container" style="display:inline;"><p style="display:inline;">  School</p><br>
+<input type="radio" name="registrationType" value="Individual" id="regInd" class="form-radio-container" style="display:inline;"><p style="display:inline;">  Individual</p><br>
+<small><em>Do <b>not</b> register as an individual if your coach will register for the school. Only register as a student here if you do <b>not</b> have a coach or will be paying us directly.</em></small>
+
+<br><br>
+<p class="title" style="display: inline;"><b>Student Information:</b></p><br>
+<div style="max-width:100%; overflow-x: auto">
+<table id="registrationTable" style="padding:5px 0 5px 0">
+	<tr>
+		<th>
+		</th>
+		<th>
+			First Name
+		</th>
+		<th>
+			Last Name
+		</th>
+		<th>
+			Grade
+		</th>
+		<th>
+			Number Sense
+		</th>
+		<th>
+			Calculator
+		</th>
+		<th>
+			General Math
+		</th>
+		<th>
+			General Science
+		</th>
+	</tr>
+
+	<tr>
+		<td>
+			<p class="numLabel">1</p>
+		</td>
+		<td>
+			<input class="rTableFname wsite-form-input wsite-input" type="text">
+		</td>
+		<td>
+			<input class="rTableLname wsite-form-input wsite-input" type="text">
+		</td>
+		<td>
+			<select class="rGrade form-select" id="testing">
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+		</td>
+		<td>
+			<input class="nsCheck form-radio-container" type="checkbox" value="x">
+		</td>
+		<td>
+			<input class="caCheck form-radio-container" type="checkbox" value="x">
+		</td>
+		<td>
+			<input class="gmCheck form-radio-container" type="checkbox" value="x">
+		</td>
+		<td>
+			<input class="gsCheck form-radio-container" type="checkbox" value="x">
+		</td>
+	</tr>
+</table>
+</div>
+
+<br>
+<a class="wsite-button wsite-button-small wsite-button-normal" id="addRow">
+	<span class="wsite-button-inner">Add A Row</span>
+</a>
+
+<a class="wsite-button wsite-button-small wsite-button-normal" id="deleteRow">
+	<span class="wsite-button-inner">Delete A Row</span>
+</a>
+
+<br><br>
+<p style="display: inline;"><b>Total Cost: </b></p><p id="totalCost" style="display: inline;">$0.00</p>
+<p>For payment, please make a check with the correct amount, and bring it to Check-In on the day of the contest. If you have any questions about payment, or would like to request an alternate payment method, please head to the <a href="/contact.html">contact page</a> for more information.</p>
+<br><br>
+
+<a class="wsite-button wsite-button-small wsite-button-normal" id="generation">
+	<span class="wsite-button-inner">Generate PDF & XLSX</span>
+</a>
+</body>
+
+</html>

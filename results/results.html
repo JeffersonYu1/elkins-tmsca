@@ -1,0 +1,1792 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.0/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.1/xlsx.full.min.js"></script>
+<script src='https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js'></script>
+
+<div id="yeetus">
+<p id="yeet"></p>
+<br>
+</div>
+
+<a class="wsite-button wsite-button-small wsite-button-normal" id="adminL">
+  <span class="wsite-button-inner">Administrator Login</span>
+</a>
+
+<div id="stuffs">
+
+<a class="wsite-button wsite-button-small wsite-button-normal" id="openA">
+	<span class="wsite-button-inner">Open All</span>
+</a>
+<a class="wsite-button wsite-button-small wsite-button-normal" id="closeA">
+	<span class="wsite-button-inner">Close All</span>
+</a>
+
+<br>
+<br>
+
+<a class="wsite-button wsite-button-small wsite-button-normal" id="genPP">
+	<span class="wsite-button-inner">Print / Generate PDF</span>
+</a>
+
+<br>
+<br>
+
+<script src="results.js"></script>
+<link href="results.css" rel="stylesheet">
+
+<div id="content">
+<!-- Elementary School -->
+<button class="accordionR"><span class="rCent"><h3 style="vertical-align: center">3rd Grade</h3></span></button>
+<div class="panel">
+    <table id="thirdNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="thirdCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="thirdGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="thirdGSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+
+
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">4th Grade</h3></span></button>
+<div class="panel">
+  <table id="fourthNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="fourthCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="fourthGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="fourthGSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">5th Grade</h3></span></button>
+<div class="panel">
+  <table id="fifthNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="fifthCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="fifthGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="fifthGSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">Elementary Sweepstakes</h3></span></button>
+<div class="panel">
+  <table id="esSWTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Overall Sweepstakes
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+  <table id="esNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="esCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="esGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Weighted Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="esGSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Weighted Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+
+
+<br>
+<br>
+
+<!-- Middle School -->
+<button class="accordionR"><span class="rCent"><h3 style="vertical-align: center">6th Grade</h3></span></button>
+<div class="panel">
+    <table id="sixthNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="sixthCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="sixthGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="sixthGSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+
+
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">7th Grade</h3></span></button>
+<div class="panel">
+  <table id="seventhNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="seventhCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="seventhGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="seventhGSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">8th Grade</h3></span></button>
+<div class="panel">
+  <table id="eighthNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="eighthCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="eighthGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="eighthGSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">Middle School Sweepstakes</h3></span></button>
+<div class="panel">
+  <table id="msSWTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Overall Sweepstakes
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+  <table id="msNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="msCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="msGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Weighted Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="msGSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Weighted Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+
+<br>
+<br>
+
+<!-- High School School -->
+<button class="accordionR"><span class="rCent"><h3 style="vertical-align: center">9th Grade</h3></span></button>
+<div class="panel">
+    <table id="ninthNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="ninthCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="ninthGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="ninthGSTable" class="results">
+      <tr>
+        <th colspan="8">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Biology
+        </th>
+        <th>
+          Chemistry
+        </th>
+        <th>
+          Physics
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+
+
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">10th Grade</h3></span></button>
+<div class="panel">
+  <table id="tenthNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="tenthCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="tenthGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="tenthGSTable" class="results">
+      <tr>
+        <th colspan="8">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Biology
+        </th>
+        <th>
+          Chemistry
+        </th>
+        <th>
+          Physics
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">11th Grade</h3></span></button>
+<div class="panel">
+  <table id="eleventhNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="eleventhCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="eleventhGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="eleventhGSTable" class="results">
+      <tr>
+        <th colspan="8">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Biology
+        </th>
+        <th>
+          Chemistry
+        </th>
+        <th>
+          Physics
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">12th Grade</h3></span></button>
+<div class="panel">
+  <table id="twelfthNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="twelfthCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="twelfthGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+   <table id="twelfthGSTable" class="results">
+      <tr>
+        <th colspan="8">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Biology
+        </th>
+        <th>
+          Chemistry
+        </th>
+        <th>
+          Physics
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">High School Science</h3></span></button>
+<div class="panel">
+  <table id="hsbio" class="results">
+      <tr>
+        <th colspan="8">
+          <center>
+            High School Biology
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Biology
+        </th>
+        <th>
+          Chemistry
+        </th>
+        <th>
+          Physics
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+  <table id="hschem" class="results">
+      <tr>
+        <th colspan="8">
+          <center>
+            High School Chemistry
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Biology
+        </th>
+        <th>
+          Chemistry
+        </th>
+        <th>
+          Physics
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+  <table id="hsphys" class="results">
+      <tr>
+        <th colspan="8">
+          <center>
+            High School Physics
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Biology
+        </th>
+        <th>
+          Chemistry
+        </th>
+        <th>
+          Physics
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+
+<button class="accordionR"><span class="tCent"><h3 style="vertical-align: center">High School Sweepstakes</h3></span></button>
+<div class="panel">
+  <table id="hsSWTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Overall Sweepstakes
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+  <table id="hsNSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Number Sense
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="hsCATable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            Calculator
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Weighted Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="hsGMTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Math
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Weighted Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="hsGSTable" class="results">
+      <tr>
+        <th colspan="5">
+          <center>
+            General Science
+          </center>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Weighted Score
+        </th>
+        <th>
+          Members
+        </th>
+      </tr>
+    </table>
+
+    <br>
+</div>
+
+<br>
+<br>
+</div>
+</div>
